@@ -75,7 +75,7 @@ export default function EditProduct({ history }){
 
     return (
         <div className="container">
-            <img src={logo} alt="MercadoMais"/>
+            <img src={logo} className="logoType" alt="MercadoMais"/>
             <div className="content">
                 <form onSubmit={handleSubmit}>
                     <label 
