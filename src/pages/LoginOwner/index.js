@@ -1,6 +1,6 @@
 import React , {useState} from 'react';
 import api from '../../services/api';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 import './styles.css';
 
 export default function LoginOwner({ history }){
@@ -21,8 +21,10 @@ export default function LoginOwner({ history }){
 
     return (
         <>
+
+            
             <div className="container">
-            <img src={logo} alt="MercadoMais"/>
+            <img src={logo} className="logoType" alt="MercadoMais"/>
             <div className="content">
             <p> <strong>Mais</strong> clientes, <strong>mais</strong> vendas para sua empresa 
             </p>

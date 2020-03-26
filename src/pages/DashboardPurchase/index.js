@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 import './styles.css';
 
 export default function DashboardPurchase(){
@@ -67,7 +67,7 @@ export default function DashboardPurchase(){
     return (
         <>
             <div className="container">
-            <img src={logo} alt="MercadoMais"/>
+            <img src={logo} className="logoType" alt="MercadoMais"/>
             <div className="content">
             <div className="sideBar">
                 <div className="sideBarContent">

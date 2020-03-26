@@ -17,9 +17,16 @@ body{
   -webkit-font-smoothing: antialiased !important;
 }
 
-body, input, button {
+body, input, button, h1 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 14;
+}
+
+
+
+.logoType {
+  width: 400px;
+  align-self: center;
 }
 
 .container{
@@ -98,7 +105,7 @@ body, input, button {
   padding: 0 20px;
   font-size: 16px;
   font-weight: bold;
-  
+  background: #FFF;
 
   cursor: pointer;
 }
@@ -142,6 +149,7 @@ body, input, button {
   overflow: hidden;
   
   
+  
 }
 
 .topBarContent {
@@ -166,6 +174,12 @@ body, input, button {
 .topBarList li {
   float: left;
   
+  
+}
+
+
+.topBarList Link{
+
 }
 
 .topBarList a:hover {
@@ -175,5 +189,6 @@ body, input, button {
 .topBarList a {
   display: block;
   padding: 8px;
-  background-color: #dddddd;
+  background-color: #FFF;
+  
 }

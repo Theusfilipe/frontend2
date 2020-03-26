@@ -6,6 +6,7 @@ import businessPic from '../../assets/online-shop.svg';
 import clientPic from '../../assets/monitor.svg';
 import mainPic from '../../assets/main.svg';
 import infoPic from '../../assets/info.svg';
+import logo from '../../assets/logo.png';
 
 import './styles.css';
 
@@ -32,27 +33,37 @@ export default function MainPage({ history }){
                     
                 </div>
             </div>
-
+            
             <div className="container">
+            <img className="logoType" src={logo}/> 
+
             <div className ="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <h1>Em época de recessão aumente seu faturamento:
+                    </h1>
+                    <p>Oferecemos uma solução digital para o seu empreendimento.
+Reduza custos, amplie resultados.</p>
+                </div>
+
+                <div className ="content">
+                <h1>Um dos negócios inovadores que está apostando em digitalizar o setor é o MERCADO MAIS. </h1>
+                <p>A startup surgiu em 2020, com a proposta de fazer as compras no lugar do usuário e entregar na residência de escolha.</p>
+                </div>
+
+                <div className ="content">
+                <p>O usuário entra na plataforma, coloca seu CEP e consegue identificar estabelecimentos parceiros do MERCADO MAIS, em sua cidade.
+Após escolher o supermercado ideal, o usuário monta sua cesta de produtos – cujo preço é o mesmo das gôndolas e finaliza o pedido.
+
                     </p>
                 </div>
 
                 <div className ="content">
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p>A lista de produtos é então enviada a um “shopper” – pessoa cadastrada na plataforma e treinada para seleção dos itens. 
+Quando o carrinho já está montado, o usuário pode acompanhar os steps até momento da entrega.
+
                     </p>
                 </div>
 
-                <div className ="content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    </p>
-                </div>
-
-                <div className ="content">
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
-                </div>
+                
                     
             </div>
 

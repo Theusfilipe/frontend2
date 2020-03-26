@@ -1,6 +1,6 @@
 import React, {useState, useMemo} from 'react';
 import api from '../../services/api';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 import camera from '../../assets/camera.svg';
 import './styles.css';
 
@@ -50,7 +50,7 @@ export default function NewOwner({ history }){
 
     return (
         <div className="container">
-            <img src={logo} alt="MercadoMais"/>
+            <img src={logo} className="logoType" alt="MercadoMais"/>
             <div className="content">
         <form onSubmit={handleSubmit}>
             <label 

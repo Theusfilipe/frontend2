@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import socketio from 'socket.io-client';
 
 import api from '../../services/api';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 import './styles.css';
 
 export default function Dashboard(){

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 
 import './styles.css';
 
@@ -11,7 +11,7 @@ export default function DashboardOwner(){
     useEffect(()=> {
         async function loadMarkets(){
             const owner_id = localStorage.getItem('owner');
-            console.log(owner_id);
+           
             const response = await api.get('/owner_dashboard', {
                 headers: { owner_id }
             });
@@ -24,7 +24,7 @@ export default function DashboardOwner(){
     return (
         <>
             <div className="container">
-            <img src={logo} alt="MercadoMais"/>
+            <img src={logo} className="logoType" alt="MercadoMais"/>
             <div className="content">
             <div className="sideBar">
                 <div className="sideBarContent">
