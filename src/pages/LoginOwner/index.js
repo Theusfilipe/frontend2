@@ -10,13 +10,31 @@ export default function LoginOwner({ history }){
     async function handleSubmit(event){
         event.preventDefault();
 
-        const response = await api.post('/owner_session',{ email, password});
+        if(password && email ){
+            try{
+                const response = await api.post('/owner_session',{ email, password});
+                const { _id} = response.data;   
 
-        const { _id} = response.data;   
+                localStorage.setItem('owner', _id);
+                alert("Login feito com sucesso");
+                history.push('/dashboardOwner');
+            }
+            catch (err){
 
-        localStorage.setItem('owner', _id);
+                
+                    alert("Erro no login, verifique seus dados");
+                
+                    
+                
+            }
+            
+                
+            
+        }else{
+            alert("Preencha todos os dados");
+        }
 
-        history.push('/dashboardOwner');
+        
     }
 
     return (

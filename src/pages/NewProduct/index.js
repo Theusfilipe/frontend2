@@ -28,32 +28,37 @@ export default function NewProduct({ history }){
     async function handleSubmit( event ){
         event.preventDefault();
         
-        const data = new FormData();
-        const market_id = localStorage.getItem('market');
+        if(thumbnail && name && price && type && subType){
+            const data = new FormData();
+            const market_id = localStorage.getItem('market');
 
-        data.append('thumbnail', thumbnail);
-        data.append('name', name);
-        data.append('price', price);
-        data.append('type', type);
-        data.append('subType', subType);
+            data.append('thumbnail', thumbnail);
+            data.append('name', name);
+            data.append('price', price);
+            data.append('type', type);
+            data.append('subType', subType);
         
-        console.log(type + subType)
         
-        const date = new Date();
-        data.append('dateEntry',date)
+        
+            const date = new Date();
+            data.append('dateEntry',date)
 
-        await api.post('/product_add', data, {
-            headers: { market_id }
-        })
+            await api.post('/product_add', data, {
+               headers: { market_id }
+            })
 
-        console.log(data);
-
-        history.push('/dashboardMarket');
+        
+            alert("Cadastro de produto feito com sucesso");
+            history.push('/dashboardMarket');
+        }else{
+            alert("Faltam informações necessárias para o cadastro do produto"); 
+        }
+        
     }
 
     return (
         <div className="container">
-            <img src={logo} alt="MercadoMais"/>
+            <img src={logo} className="logoType" alt="MercadoMais"/>
             <div className="content">
                 <form onSubmit={handleSubmit}>
                     <label 

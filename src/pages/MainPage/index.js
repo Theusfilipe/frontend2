@@ -1,5 +1,5 @@
-import React  from 'react';
-import { Link } from 'react-router-dom';
+import React , {useState} from 'react';
+import { Link  } from 'react-router-dom';
 //import api from '../../services/api';
 
 import businessPic from '../../assets/online-shop.svg';
@@ -10,8 +10,16 @@ import logo from '../../assets/logo.png';
 
 import './styles.css';
 
+
+
 export default function MainPage({ history }){
-    
+    const [cep, setCep] = useState('');
+
+    async function handleSubmit(event){
+        event.preventDefault();
+
+        
+    }
 
     return (
         <>
@@ -36,6 +44,24 @@ export default function MainPage({ history }){
             
             <div className="container">
             <img className="logoType" src={logo}/> 
+            <div className ="content">
+                <form onSubmit = {handleSubmit}> 
+                    <label htmlFor="email"> CEP *</label>
+                    <input 
+                    type="text" 
+                    id="cep" 
+                    placeholder="Seu CEP"
+                    value={cep}
+                    onChange={event => setCep(event.target.value)}
+                    />
+
+                    <button className="btn" type="submit">Entrar</button>
+            </form>
+
+            </div>
+            
+
+                
 
             <div className ="content">
                 <h1>Em época de recessão aumente seu faturamento:

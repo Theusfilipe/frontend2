@@ -37,29 +37,35 @@ export default function NewOwner({ history }){
         const data = new FormData();
         //const owner_id = localStorage.getItem('owner');
 
-        data.append('thumbnail', thumbnail);
-        data.append('name', name);
-        data.append('password', password);
+        if(thumbnail && name && password && rg && docEmiter && cpf && phone && email ){
+            data.append('thumbnail', thumbnail);
+            data.append('name', name);
+            data.append('password', password);
 
-        data.append('rg', rg);
-        data.append('docEmiter',docEmiter)
-        data.append('cpf', cpf);
+            data.append('rg', rg);
+            data.append('docEmiter',docEmiter)
+            data.append('cpf', cpf);
         
 
-        data.append('phone', phone);
-        data.append('email', email);
-        data.append('dateEntry','29/01/2020');
+            data.append('phone', phone);
+            data.append('email', email);
+            data.append('dateEntry','29/01/2020');
 
-        await api.post('/owner_add', data, {
-            headers: {}
-        })
+            await api.post('/owner_add', data, {
+                headers: {}
+            })
 
-        history.push('/dashboardOwner');
+            history.push('/dashboardOwner');
+        } else {
+            alert("Um dos campos está vazio")
+        }
+
+        
     }
 
     return (
         <div className="container">
-            <img src={logo} alt="MercadoMais"/>
+            <img src={logo} className="logoType" alt="MercadoMais"/>
             <div className="content">
         <form onSubmit={handleSubmit}>
             <label 

@@ -79,7 +79,7 @@ export default function DashboardPurchase(){
                             <strong>Produtos: R${val.total}</strong>
                             <strong>Frete: R${val.freight}</strong>
                             <strong>Total da entrega R${val.total + val.freight}</strong>
-                            <h4>{val._id}</h4>
+                            
                         </div>
                     </li>
 
@@ -98,7 +98,7 @@ export default function DashboardPurchase(){
                     {products.map(product => (
                         <li key ={product._id}>
 
-                                <strong>{product.name}</strong><h4>R$ {product.price}</h4><h4>{product._id}</h4>
+                                <strong>{product.name}</strong><h4>R$ {product.price}</h4>
                         </li>
                     ))}
                 </ul>
