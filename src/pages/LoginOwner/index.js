@@ -42,7 +42,10 @@ export default function LoginOwner({ history }){
 
             
             <div className="container">
-            <img src={logo} className="logoType" alt="MercadoMais"/>
+                    <img src={logo} className="logoType" alt="MercadoMais"/>
+                    
+                
+            
             <div className="content">
             <p> <strong>Mais</strong> clientes, <strong>mais</strong> vendas para sua empresa 
             </p>

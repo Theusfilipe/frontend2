@@ -22,6 +22,8 @@ export default function MainPage({ history }){
     }
 
     return (
+
+        
         <>
             <div className="topBar">
                 <div className="topBarContent">

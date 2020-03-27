@@ -23,9 +23,13 @@ body, input, button {
 }
 
 .logoType {
-  width: 200px;
-  align-self: center;
+  max-width: 40%;
+  max-height: 40%;
+  
+  
 }
+
+
 
 .container{
   margin:80px auto 0;
@@ -37,7 +41,7 @@ body, input, button {
 }
 
 .content {
-  width: 100%;
+  
   background: #FFF;
   margin-top:50px;
   border-radius: 4px;
