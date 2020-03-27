@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
-import logo from '../../assets/logo.png';
+
 import './styles.css';
 
 export default function DashboardPurchase(){
@@ -29,6 +29,8 @@ export default function DashboardPurchase(){
             const response = await api.get('/product_purchase_index', {
                 params: { purchase_id }
             });
+
+            
             
             var product_list = [];
             
@@ -37,13 +39,13 @@ export default function DashboardPurchase(){
             for (var product_purchase in response.data){
                 var product_id = response.data[number_products].product;
                 
-                
+                var product_quantity = response.data[number_products].quantity;
                 const response_product = await api.get('/product', {
                     headers: {product_id
                 }});
                 
                 
-                
+                response_product.data[0].quantity = product_quantity;
                 product_list.push(response_product.data[0]); //Take the first item on a list of 1 item
                 
                 number_products++;
@@ -54,7 +56,7 @@ export default function DashboardPurchase(){
                 product_list.push(response.data)
             ));*/
 
-
+            
             setProducts(product_list);
             
             
@@ -67,7 +69,7 @@ export default function DashboardPurchase(){
     return (
         <>
             <div className="container">
-            <img src={logo} className="logoType" alt="MercadoMais"/>
+            
             <div className="content">
             <div className="sideBar">
                 <div className="sideBarContent">
@@ -75,10 +77,10 @@ export default function DashboardPurchase(){
                 {purchaseSelected.map(val => (
                     <li key ={val._id}>
                         <div className="purchaseContent">
-                            <h2>Entrega para {val.address}</h2>
+                            <h2>Entrega para:  {val.address}, N° {val.addressNumber}, {val.district}, {val.city} </h2>
                             <strong>Produtos: R${val.total}</strong>
                             <strong>Frete: R${val.freight}</strong>
-                            <strong>Total da entrega R${val.total + val.freight}</strong>
+                            <strong>Total da entrega: R${val.total + val.freight}</strong>
                             
                         </div>
                     </li>
@@ -98,7 +100,7 @@ export default function DashboardPurchase(){
                     {products.map(product => (
                         <li key ={product._id}>
 
-                                <strong>{product.name}</strong><h4>R$ {product.price}</h4>
+                                <strong>{product.quantity} unidades de {product.name}</strong><h4>R$ {product.price}</h4>
                         </li>
                     ))}
                 </ul>

@@ -189,6 +189,7 @@ body, input, button, h1 {
 .topBarList a {
   display: block;
   padding: 8px;
+  border-radius: 4px;
   background-color: #FFF;
   
 }
