@@ -1,6 +1,6 @@
 import React , {useEffect, useState} from 'react';
 import api from '../../services/api';
-import logo from '../../assets/logo.png';
+
 import idPic from '../../assets/id-card.svg';
 import './styles.css';
 

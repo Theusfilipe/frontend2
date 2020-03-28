@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
-import logo from '../../assets/logo.png';
+
 import './styles.css';
 
 
@@ -16,7 +16,7 @@ import fruits from '../../assets/fruit.png';
 import bread from '../../assets/bread.png';
 import wheat from '../../assets/wheat.png';
 import yogurt from '../../assets/yogurt.png';
-import EditProduct from '../EditProduct';
+
 
 export default function Dashboard({ history }){
     const [purchases, setPurchases] = useState([]);

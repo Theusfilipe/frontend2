@@ -21,21 +21,9 @@ export default function Routes(){
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={MainPage}/>
-                <Route path="/dashboard" component={Dashboard}/>
-                <Route path="/new" component={New}/>
-                <Route path="/login"  component={LoginOwner}/>
-                <Route path="/dashboardOwner"  component={DashboardOwner}/>
-                <Route path="/ownerProfile"  component={OwnerProfile}/>
-                <Route path="/dashboardMarket"  component={DashboardMarket}/>
-                <Route path="/dashboardPurchase"  component={DashboardPurchase}/>
-                <Route path="/newProduct"  component={NewProduct}/>
-                <Route path="/editProduct"  component={EditProduct}/>
-
-                <Route path="/loginex"  component={Login}/>
+                
 
                 
-                <Route path="/newMarket" component={NewMarket}/>
-                <Route path="/newOwner" component={NewOwner}/>
             </Switch>
         </BrowserRouter>
     )
