@@ -36,6 +36,13 @@
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 
+.logoType {
+  width: 180px;
+  height: 180px;
+  padding: 30px;
+  align-self: center;
+}
+
 html, body {
   height: 100%;
 }
@@ -264,7 +271,7 @@ div#preloader {
   left: 0;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.40);
+  background: rgb(255, 54, 54);
   z-index: 9;
 }
 
@@ -414,7 +421,7 @@ div#preloader {
 }
 
 .sticky-logo h1 span {
-  color: #3ec1d5;
+  color: #ffffff;
 }
 .stick .main-menu ul.navbar-nav li.active > a::after {
   border: 1px solid #fff;
@@ -1351,7 +1358,7 @@ div#preloader {
 ----------------------------------------*/
 
 .testimonials-area {
-  background: rgba(0, 0, 0, 0) url("../img/background/slider1.jpg") no-repeat fixed center top / cover;
+  background: rgba(0, 0, 0, 0) url("../assets/background.jpg") no-repeat fixed center top / cover;
   height: auto;
   width: 100%;
 }
