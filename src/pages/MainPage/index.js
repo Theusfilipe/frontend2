@@ -34,7 +34,6 @@ export default function MainPage({ history }) {
     async function handleSubmit(event) {
         event.preventDefault();
 
-
     }
 
     return (
@@ -111,14 +110,41 @@ export default function MainPage({ history }) {
                 </header>
                 {/*<!-- header end -->*/}
 
+                <div className="testimonials-area">
+                    <div className="testi-inner area-padding">
+                        <div className="testi-overly"></div>
+                        <div className="container ">
+                        <img className="logoType" src={logo} alt="" />
+                            <div className="row">
+                               
+                                <form onSubmit = {handleSubmit}> 
+                                    
+                                    <input 
+                                    type="text" 
+                                    id="cep" 
+                                    placeholder="Seu CEP"
+                                    value={cep}
+                                    onChange={event => setCep(event.target.value)}
+                                    />
+
+                                <button className="btn" type="submit">Entrar</button>
+                                </form>
+                                
+                                {/*<!-- End Right Feature -->*/}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*<!-- End Testimonials -->*/}
+
                 
 
                 {/*<!-- Start About area -->*/}
-                <img src='logo' alt="" />
+                
                 <div id="about" className="about-area area-padding">
                 
                     <div className="container">
-                        <img className="logoType" src={logo} alt="" />
+                        
                         <div className="row">
                             <div className="col-md-12 col-sm-12 col-xs-12">
                                 <div className="section-headline text-center">
@@ -146,17 +172,17 @@ export default function MainPage({ history }) {
                                         </a>
                                         <p>
                                         Um dos negócios inovadores que está apostando em digitalizar o setor é o Mercado Mais. A startup surgiu em 2020, com a proposta de trazer comodidade nas compras do cliente e entregar na residência de escolha.
-    </p>
+                                        </p>
                                         <ul>
                                             <li>
                                                 <i className="fa fa-check"></i> Comodidade
-      </li>
+                                            </li>
                                             <li>
                                                 <i className="fa fa-check"></i> Rapidez
-      </li>
+                                            </li>
                                             <li>
                                                 <i className="fa fa-check"></i> Praticidade
-      </li>
+                                            </li>
                                             
       
                                         </ul>
@@ -438,7 +464,7 @@ export default function MainPage({ history }) {
                                     <div className="footer-content">
                                         <div className="footer-head">
                                             <div className="footer-logo">
-                                                <h2>Mercado<span>+</span></h2>
+                                                <h2>Mercado <span>+</span></h2>
                                             </div>
 
                                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
