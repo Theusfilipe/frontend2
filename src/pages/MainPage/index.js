@@ -192,73 +192,21 @@ export default function MainPage({ history }) {
                                             <div className="panel-heading">
                                                 <h4 className="check-title">
                                                     <a data-toggle="collapse" className="active" data-parent="#accordion" href="#check1">
-                                                        <span className="acc-icons"></span>Consectetur adipisicing elit.
+                                                        <span className="acc-icons"></span>Porque o MercadoMais?
             </a>
                                                 </h4>
                                             </div>
                                             <div id="check1" className="panel-collapse collapse in">
                                                 <div className="panel-body">
                                                     <p>
-                                                        Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero
+                                                    Em pesquisa realizada com pessoas de várias idades, conseguimos observar que grande parte destas, sentem a necessidade de um app para fazer compras.
           </p>
                                                 </div>
                                             </div>
                                         </div>
                                         {/*<!-- End Panel Default -->*/}
                                         {/*<!-- Panel Default -->*/}
-                                        <div className="panel panel-default">
-                                            <div className="panel-heading">
-                                                <h4 className="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#check2">
-                                                        <span className="acc-icons"></span> Dolore magnam quidem repellat.
-            </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check2" className="panel-collapse collapse">
-                                                <div className="panel-body">
-                                                    <p>
-                                                        Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-          </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {/*<!-- End Panel Default -->*/}
-                                        {/*<!-- Panel Default -->*/}
-                                        <div className="panel panel-default">
-                                            <div className="panel-heading">
-                                                <h4 className="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#check3">
-                                                        <span className="acc-icons"></span>Redug Lefes dolor sit.
-            </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check3" className="panel-collapse collapse ">
-                                                <div className="panel-body">
-                                                    <p>
-                                                        Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-          </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {/*<!-- End Panel Default -->*/}
-                                        {/*<!-- Panel Default -->*/}
-                                        <div className="panel panel-default">
-                                            <div className="panel-heading">
-                                                <h4 className="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#check4">
-                                                        <span className="acc-icons"></span>Maiores alias accusamus
-            </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check4" className="panel-collapse collapse">
-                                                <div className="panel-body">
-                                                    <p>
-                                                        Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-          </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {/*<!-- End Panel Default -->*/}
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -267,13 +215,13 @@ export default function MainPage({ history }) {
                                     {/*<!-- Nav tabs -->*/}
                                     <ul className="nav nav-tabs" role="tablist">
                                         <li className="active">
-                                            <a href="#p-view-1" role="tab" data-toggle="tab">Project</a>
+                                            <a href="#p-view-1" role="tab" data-toggle="tab">Quem quer comodidade?</a>
                                         </li>
                                         <li>
-                                            <a href="#p-view-2" role="tab" data-toggle="tab">Planning</a>
+                                            <a href="#p-view-2" role="tab" data-toggle="tab">Quem usaria o MercadoMais?</a>
                                         </li>
                                         <li>
-                                            <a href="#p-view-3" role="tab" data-toggle="tab">Success</a>
+                                            <a href="#p-view-3" role="tab" data-toggle="tab">Quem está disposto a mudar conosco?</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -337,33 +285,44 @@ export default function MainPage({ history }) {
                                 <div className="col-md-12 col-sm-12 col-xs-12">
                                     {/*<!-- Start testimonials Start -->*/}
                                     <div className="testimonial-content text-center">
-                                        <a className="quate" href="#"><i className="fa fa-quote-right"></i></a>
+                                        
                                         {/*<!-- start testimonial carousel -->*/}
                                         <div className="testimonial-carousel">
                                             <div className="single-testi">
                                                 <div className="testi-text">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+                                                       - O usuário entra na plataforma, coloca seu CEP e consegue identificar estabelecimentos parceiros do MERCADO MAIS, em sua cidade.
           </p>
-                                                    <h6>Boby</h6>
+                                                    
                                                 </div>
                                             </div>
                                             {/*<!-- End single item -->*/}
                                             <div className="single-testi">
                                                 <div className="testi-text">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+                                                   - Após escolher o supermercado ideal, o usuário monta sua cesta de produtos – cujo preço é o mesmo das gôndolas e finaliza o pedido.
+
           </p>
-                                                    <h6>Jhon</h6>
+                                                    
                                                 </div>
                                             </div>
                                             {/*<!-- End single item -->*/}
                                             <div className="single-testi">
                                                 <div className="testi-text">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+                                                   - A lista de produtos é então enviada a um “shopper” – pessoa cadastrada na plataforma e treinada para seleção dos itens. 
           </p>
-                                                    <h6>Fleming</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                            {/*<!-- End single item -->*/}
+                                            {/*<!-- End single item -->*/}
+                                            <div className="single-testi">
+                                                <div className="testi-text">
+                                                    <p>
+                                                    - Quando o carrinho já está montado, o usuário pode acompanhar os steps até momento da entrega. 
+          </p>
+                                                    
                                                 </div>
                                             </div>
                                             {/*<!-- End single item -->*/}
@@ -479,7 +438,7 @@ export default function MainPage({ history }) {
                                     <div className="footer-content">
                                         <div className="footer-head">
                                             <div className="footer-logo">
-                                                <h2><span>e</span>Business</h2>
+                                                <h2>Mercado<span>+</span></h2>
                                             </div>
 
                                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
@@ -513,7 +472,7 @@ export default function MainPage({ history }) {
                                             <div className="footer-contacts">
                                                 <p><span>Tel:</span> +123 456 789</p>
                                                 <p><span>Email:</span> contact@example.com</p>
-                                                <p><span>Working Hours:</span> 9am-5pm</p>
+                                                <p><span>Horário de atendimento:</span> 9am-5pm</p>
                                             </div>
                                         </div>
                                     </div>
@@ -543,7 +502,7 @@ export default function MainPage({ history }) {
                                 <div className="col-md-12 col-sm-12 col-xs-12">
                                     <div className="copyright text-center">
                                         <p>
-                                            &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+                                            &copy; Copyright <strong>MercadoMais</strong>. All Rights Reserved
     </p>
                                     </div>
                                     <div className="credits">
