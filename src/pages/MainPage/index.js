@@ -84,6 +84,10 @@ export default function MainPage({ history }) {
                                                 <li>
                                                     <a className="page-scroll" href="#about">Login de Estabelecimentos</a>
                                                 </li>
+
+                                                <li>
+                                                    <a className="page-scroll" href="#about">Junte-se à nós</a>
+                                                </li>
                                                 
                                                 
                                                 
@@ -175,7 +179,7 @@ export default function MainPage({ history }) {
                         <div className="row">
                             <div className="col-md-12 col-sm-12 col-xs-12">
                                 <div className="section-headline text-center">
-                                    <h2>Faq Question</h2>
+                                    <h2>Números Importantes</h2>
                                 </div>
                             </div>
                         </div>
@@ -277,39 +281,35 @@ export default function MainPage({ history }) {
                                     <div className="tab-pane active" id="p-view-1">
                                         <div className="tab-inner">
                                             <div className="event-content head-team">
-                                                <h4>Project</h4>
+                                                <h4>74%</h4>
                                                 <p>
-                                                    Redug Lares dolor sit amet, consectetur adipisicing elit. Animi vero excepturi magnam ducimus adipisci voluptas, praesentium maxime necessitatibus in dolor dolores unde ab, libero quo. Aut, laborum sequi.
+                                                    74% dos usuários gostariam de maior comodidade na hora da fazer compras
         </p>
-                                                <p>
-                                                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis placeat.
-        </p>
+                                                
+                                                    
                                             </div>
                                         </div>
                                     </div>
                                     <div className="tab-pane" id="p-view-2">
                                         <div className="tab-inner">
                                             <div className="event-content head-team">
-                                                <h4>Planning</h4>
+                                                <h4>75%</h4>
                                                 <p>
-                                                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis.
+                                                    75% dos usuários passariam a usar um APP como forma de fazer compras
         </p>
-                                                <p>
-                                                    Redug Lares dolor sit amet, consectetur adipisicing elit. Animi vero excepturi magnam ducimus adipisci voluptas, praesentium maxime necessitatibus in dolor dolores unde ab, libero quo. Aut.
-        </p>
+                                                
                                             </div>
                                         </div>
                                     </div>
                                     <div className="tab-pane" id="p-view-3">
                                         <div className="tab-inner">
                                             <div className="event-content head-team">
-                                                <h4>Success</h4>
+                                                <h4>92%</h4>
                                                 <p>
-                                                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis placeat.
+                                                    92% dos usuários estariam dispostos a modificar a forma de fazer compras
         </p>
-                                                <p>
-                                                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis.
-        </p>
+                                            
+                                                    
                                             </div>
                                         </div>
                                     </div>
@@ -325,22 +325,7 @@ export default function MainPage({ history }) {
 
                 
 
-                {/*<!-- Start reviews Area -->*/}
-                <div className="reviews-area hidden-xs">
-                    <div className="work-us">
-                        <div className="work-left-text">
-                            <a href="#">
-                                <img src="img/about/2.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div className="work-right-text text-center">
-                            <h2>working with us</h2>
-                            <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
-                            <a href="#contact" className="ready-btn">Contact us</a>
-                        </div>
-                    </div>
-                </div>
-                {/*<!-- End reviews Area -->*/}
+                
 
                 
                 {/*<!-- Start Testimonials -->*/}
