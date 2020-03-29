@@ -343,7 +343,55 @@ export default function MainPage({ history }) {
                 {/*<!-- End reviews Area -->*/}
 
                 
-                
+                {/*<!-- Start Testimonials -->*/}
+                <div className="testimonials-area">
+                    <div className="testi-inner area-padding">
+                        <div className="testi-overly"></div>
+                        <div className="container ">
+                            <div className="row">
+                                <div className="col-md-12 col-sm-12 col-xs-12">
+                                    {/*<!-- Start testimonials Start -->*/}
+                                    <div className="testimonial-content text-center">
+                                        <a className="quate" href="#"><i className="fa fa-quote-right"></i></a>
+                                        {/*<!-- start testimonial carousel -->*/}
+                                        <div className="testimonial-carousel">
+                                            <div className="single-testi">
+                                                <div className="testi-text">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+          </p>
+                                                    <h6>Boby</h6>
+                                                </div>
+                                            </div>
+                                            {/*<!-- End single item -->*/}
+                                            <div className="single-testi">
+                                                <div className="testi-text">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+          </p>
+                                                    <h6>Jhon</h6>
+                                                </div>
+                                            </div>
+                                            {/*<!-- End single item -->*/}
+                                            <div className="single-testi">
+                                                <div className="testi-text">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+          </p>
+                                                    <h6>Fleming</h6>
+                                                </div>
+                                            </div>
+                                            {/*<!-- End single item -->*/}
+                                        </div>
+                                    </div>
+                                    {/*<!-- End testimonials end -->*/}
+                                </div>
+                                {/*<!-- End Right Feature -->*/}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*<!-- End Testimonials -->*/}
                 
                 {/*<!-- Start contact Area -->*/}
                 <div id="contact" className="contact-area">
